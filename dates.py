@@ -44,5 +44,73 @@ print(message)
 message = "Hello Python Crash Course World!"
 print(message)
 
-## 2.3 Store a person`s name in a variable and print a message to that person. Your message should be simple, such as "Hello Eric, would you like to learn some Python today?"
+
+## changing cases in strings
+name = "ada lovelace"
+print(name.title())
+print(name.upper())
+print(name.lower())
+
+
+##using variables in strings
+first_name = "ada"
+last_name = "lovelace"
+full_name = f"{first_name} {last_name}"
+print(full_name)
+
+## Adding whitespace to strings with tabs or newlines
+print("Python")
+print("\tPython")
+print("Languages:\nPython\nC\nJavaScript")
+
+## Stripping whitespace
+favorite_language = 'python '
+print(favorite_language)
+print(favorite_language.rstrip())
+
+## Avoiding syntax errors with strings
+message = "One of Python's strengths is its diverse community."
+print(message)
+
+
+##TRY IT YOURSELF
+## 2-3. Personal Message: Store a person`s name in a variable, and print a message to that person. Your message should be simple, such as "Hello Eric, would you like to learn some Python today?"
+name = "Eric"
+message = f"Hello {name}, would you like to learn some Python today?"
+print(message)
+
+## 2-4. Name Cases: Store a person`s name in a variable, and then print that person`s name in lowercase, uppercase, and titlecase.
+name = "eric"
+print(name.lower())
+print(name.upper())
+
+
+## 2-5. Famous Quote: Find a quote from a famous person you admire. Print the quote and the name of its author. Your output should look something like the following, including the quotation marks:
+quote = "A person who never made a mistake never tried anything new."
+author = "Albert Einstein"
+print(f'{author} once said, "{quote}"')
+
+
+## 2-6. Famous Quote 2: Repeat Exercise 2-5, but this time store the famous person`s name in a variable called famous_person. Then compose your message and store it in a new variable called message. Print your message.
+famous_person = "Albert Einstein"
+message = f'{famous_person} once said, "{quote}"'
+print(message)
+
+
+## 2-7. Stripping Names: Store a person`s name, and include some whitespace characters at the beginning and end of the name. Make sure you use each character combination, "\t" and "\n", at least once. Print the name once, so that the whitespace around the name is displayed. Then print the name using each of the three stripping functions, lstrip(), rstrip(), and strip().
+name = " \tAlbert Einstein\n "
+print(name)
+print(name.lstrip())
+print(name.rstrip())
+print(name.strip())
+
+##2.8
+
+## Numbers
+## Integers are whole numbers, and floating-point numbers have decimal points.
+## Python uses two multiplication symbols to represent exponents.
+## Python supports the order of operations too, so you can use multiple operations in one expression.
+## You can use parentheses to modify the order of operations so Python can evaluate your expression in the order you specify.
+## Python will interpret any number with a decimal point as a floating-point number.
+## If you mix an integer and a float in any other operation, you will get a float as the result.
 
