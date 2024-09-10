@@ -150,6 +150,7 @@ print(16/2)
 
 
 ## Chapter 03 Introducing Lists
+## GENERAL INTRODUCTION
 ## A list is a collection of items in a particular order. You can make a list that includes the letters of the alphabet, the digits from 0-9, or the names of all the people in your family. You can put anything you want into a list, and the items in your list don`t have to be related in any particular way.
 ## In Python, square brackets ([]) indicate a list, and individual elements in the list are separated by commas.
 ## Lists are ordered collections, so you can access any element in a list by telling Python the position, or index, of the item desired.
@@ -176,6 +177,20 @@ print(16/2)
 ## If you know the value of the item you want to remove, you can use the remove() method.
 ## You can sort a list permanently in alphabetical order using the sort() method.
 ## You can sort a list temporarily in alphabetical order using the sorted() function.
+
+## accessing elements in a list
+bicycles = ['trek', 'cannondale', 'redline', 'specialized']
+print(bicycles[0])
+print(bicycles[0].title())
+print(bicycles[1])
+print(bicycles[3])
+print(bicycles[-1])
+
+
+##Index positions start at 0, not 1.
+bicycles = ['trek', 'cannondale', 'redline', 'specialized']
+print(bicycles[1])
+print(bicycles[3])
 
 
 
