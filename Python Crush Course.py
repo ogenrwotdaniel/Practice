@@ -1,6 +1,5 @@
 ## Practice from the book "Python Crash Course" by Eric Matthes
 
-from datetime import datetime
 
 ## Chapter 01 Getting Started
 ##It`s best to use lowercase letters and underscores for files and folders names because python uses these naming conventions for files and folders.
@@ -20,9 +19,7 @@ from datetime import datetime
 print("Hello World!")
 
 
-
 ## Chapter 02 Variables and Simple Data Types
-
 ##As you write your programs, your editor highlights different parts of your code in different colors. This color-coding is called syntax highlighting, and it makes your code easier to read.
 ##Variables are used to store values that can change throughout the life of a program. A variable is a label that you can use to refer to a value or set of values stored in memory.
 ## Rules for naming variables:
@@ -113,4 +110,72 @@ print(name.strip())
 ## You can use parentheses to modify the order of operations so Python can evaluate your expression in the order you specify.
 ## Python will interpret any number with a decimal point as a floating-point number.
 ## If you mix an integer and a float in any other operation, you will get a float as the result.
+
+
+
+##Flaots and Integers
+print(3/2)
+print(3.0/2)
+print(3/2.0)
+
+##Underscores in numbers
+universe_age = 14_000_000_000
+print(universe_age)
+
+##Multiple assignments you cn assign multiple variables in one line. This can help shorten your programs and make them easier to read; you will use this technique often.
+x, y, z = 0, 0, 0
+print(x)
+print(y)
+print(z)
+
+
+## Constants
+## A constant is like a variable whose value stays the same throughout the life of a program. Python doesn`t have built-in constant types, but Python programmers use all capital letters to indicate a variable should be treated as a constant and never be changed.
+MAX_CONNECTIONS = 5000
+print(MAX_CONNECTIONS)
+
+
+## TRY IT YOURSELF
+## 2-9. Favorite Number: Store your favorite number in a variable. Then, using that variable, create a message that reveals your favorite number. Print that message.
+favorite_number = 7
+message = f"My favorite number is {favorite_number}."
+print(message)
+
+## 2.801 Write addition, subtraction, multiplication, and division operations that each result in the number 8. Be sure to enclose your operations in print() calls to see the results. You should create four lines that look like this
+print(5+3)
+print(10-2)
+print(4*2)
+print(16/2)
+
+
+
+## Chapter 03 Introducing Lists
+## A list is a collection of items in a particular order. You can make a list that includes the letters of the alphabet, the digits from 0-9, or the names of all the people in your family. You can put anything you want into a list, and the items in your list don`t have to be related in any particular way.
+## In Python, square brackets ([]) indicate a list, and individual elements in the list are separated by commas.
+## Lists are ordered collections, so you can access any element in a list by telling Python the position, or index, of the item desired.
+## Index positions start at 0, not 1.
+## To get the syntax for accessing an element from a list, you give the name of the list followed by the index of the item enclosed in square brackets.
+## Python has a special syntax for accessing the last element in a list. By asking for the item at index -1, Python always returns the last item in the list.
+## You can modify the elements in a list by referring to the index of the item you want to change.
+## You can add elements to the end of a list using the append() method.
+## You can add elements to a specific position in a list by using the insert() method.
+## You can remove elements by their position in a list, or by the value of the item.
+## The pop() method removes the last item in a list, but it lets you work with that item after removing it.
+## If you know the position of the item you want to remove from a list, you can use the del statement.
+## If you only know the value of the item you want to remove, you can use the remove() method.
+## You can sort a list alphabetically, in either order, or in a specific order that you specify.
+## You can reverse the original order of a list at any time by calling the reverse() method.
+## The len() function returns the number of items in a list.
+## Lists can hold millions of items, as long as your computer`s memory can hold the list.
+## You can use individual values from a list just as you would any other variable.
+## You can concatenate, or combine, lists using the addition operator (+).
+## You can add new elements to a list by appending them.
+## You can insert a new element at any position in your list by using the insert() method.
+## You can remove an item according to its position in a list, or according to its value.
+## If you know the position of the item you want to remove from a list, you can use the del statement.
+## If you know the value of the item you want to remove, you can use the remove() method.
+## You can sort a list permanently in alphabetical order using the sort() method.
+## You can sort a list temporarily in alphabetical order using the sorted() function.
+
+
 
